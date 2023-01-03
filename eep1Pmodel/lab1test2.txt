@@ -1,0 +1,14 @@
+MOV R5, #3 // set up known values on R5...R7, test MOV with literal op2
+MOV R6, #255
+MOV R7, #13
+MOV R0, R6 // test MOV
+ADD R1, R5, R7 // test ADD
+SUB R2, R5, R6 // test SUB
+AND R3, R5, R7 // test AND
+CMP R5, R5 // test CMP
+CMP R3, #0 // test CMP with literal op2
+ADD R1, #3 // test ADD with literal op2
+SUB R1, #255 // test SUB with literal op2
+AND R1, #25 // test AND with literal op2
+
+
