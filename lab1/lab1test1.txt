@@ -1,11 +1,12 @@
-MOV R0, #1 // set up known values on R0..R3
-MOV R1, #3
-MOV R2, #5
-MOV R3, #13
-ADD R4, R0, R1 // test ADD
-SUB R5, R2, R3 // test SUB
-SBC R6, R2, R0 // test SBC
-ADC R7, R3, R0 // test  ADC
-AND R4, R2, R3 // test AND
-ADD R5, #3 // test ADD with literal op2
-JMP 0 // loop forever
+MOV R5, #3 // set up known values on R5...R7, test MOV with literal op2
+MOV R6, #-1
+MOV R7, #13
+MOV R0, R6 // test MOV
+ADD R1, R5, R7 // test ADD
+ADD R2, #3 // test ADD with literal op2
+ADD R4, #255 // test ADD with literal op2
+
+
+
+
+
